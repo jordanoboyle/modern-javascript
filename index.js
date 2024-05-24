@@ -1,4 +1,4 @@
-
+/* global moment*/ 
 function spaceBar() {
   let i = 0;
   let space = "";
@@ -9,6 +9,9 @@ function spaceBar() {
   return console.log(space); 
 }
 spaceBar();
+
+var moment = require('moment'); // require
+moment().format(); 
 
 var datetime = moment().startOf("day").fromNow();
 console.log(datetime);
